@@ -44,8 +44,6 @@ def confirm_student_added():
     hackbright.make_new_student(first, last, github)
     
     return render_template('successful_add.html', 
-                            firstname=first,
-                            lastname=last,
                             github=github)
 
 if __name__ == "__main__":
